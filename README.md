@@ -1,5 +1,7 @@
 # Analysis of Covid-19 in Chile
 
+The dashboard of Covid-19 in Chile can be found here: https://covid-chile-dashboard.herokuapp.com/
+
 ### About this project
 The plan is to make a dashboard that includes daily updated information about Covid-19 in Chile. The dashboard should include the following plots: 
 * Daily infections in Chile including rolling average
