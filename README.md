@@ -16,8 +16,18 @@ The plan is to make a dashboard that includes daily updated information about Co
 * Furthermore, the Chilean government provides daily [updated data also on a district level](https://github.com/MinCiencia/Datos-COVID19/). 
 
 ### More ideas:
+* Include daily tests in Chile, following the information provided here: https://github.com/MinCiencia/Datos-COVID19/blob/master/output/producto7/PCR.csv
 * Single number with plotly to show the total confirmed cases/deaths: https://plotly.com/python/indicator/
 * Plots indicating the confirmed cases/deaths per 100,000 inhabitants
+
+
+### Files
+The folder mayapp contains the following the following files: 
+* __init__: Imports flask and initiates app
+* routes.py: calls return_figures() from /wrangling_scripts/wrangle_data.py and sends JSON files to front-end
+
+The folder wrangling_scripts contains the following files: 
+* wrangle_data.py: Loads data from CSSE and defines to functions: get information for one single_country and about the daily_increase. Then, in return_figures the four plotly plots are prepared. 
 
 
 ### Further information to Covid-19 in Chile
