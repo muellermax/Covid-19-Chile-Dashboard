@@ -10,10 +10,14 @@ The plan is to make a dashboard that includes daily updated information about Co
 * Deaths in comparison with other Latin American Countries
 * Map of Santiago de Chile with number of infections in the differenct city districs
 
+### Installation
+This project uses the following python packages: plotly, pandas, flask, gunicorn. For the deployment of the app I tried Heroku. 
+
 
 ### Data sources
 * Main data source is the [John Hopkins University CSSE database](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv)
 * Furthermore, the Chilean government provides daily [updated data also on a district level](https://github.com/MinCiencia/Datos-COVID19/). 
+
 
 ### More ideas:
 * Include daily tests in Chile, following the information provided here: https://github.com/MinCiencia/Datos-COVID19/blob/master/output/producto7/PCR.csv
