@@ -202,17 +202,27 @@ def return_figures():
     # Fifth chart is a single value showing the total amount of cases in Chile and the increase.
 
     df = single_country('Chile', csse_cases_all)
-
-
     graph_five = go.Figure(go.Indicator(
-                 title={'text': 'Total number of Covid-19 cases in Chile and daily increase'},
+                 title={'text': 'Covid-19 cases in Chile'},
                  mode='number+delta',
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}},
-                 number={'valueformat':'%{y:,.2}'})
+                        'increasing': {'color': '#8b0000'}})
                  )
+
+    # Sixths chart is a single value showing the total amount of deaths in Chile and the increase.
+
+    df = single_country('Chile', csse_deaths_all)
+    graph_six = go.Figure(go.Indicator(
+                 title={'text': 'Covid-19 deaths in Chile'},
+                 mode='number+delta',
+                 value=df.iloc[-1, 1],
+                 delta={'position': "top",
+                        'reference': df.iloc[-2, 1],
+                        'increasing': {'color': '#8b0000'}})
+                 )
+
 
     # append all charts to the figures list
     figures = []
@@ -221,5 +231,6 @@ def return_figures():
     figures.append(dict(data=graph_three, layout=layout_three))
     figures.append(dict(data=graph_four, layout=layout_four))
     figures.append(dict(data=graph_five))
+    figures.append(dict(data=graph_six))
 
     return figures
