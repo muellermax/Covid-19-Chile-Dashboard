@@ -205,15 +205,14 @@ def return_figures():
 
 
     graph_five = go.Figure(go.Indicator(
+                 title={'text': 'Total number of Covid-19 cases in Chile and daily increase'},
                  mode='number+delta',
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}})
+                        'increasing': {'color': '#8b0000'}},
+                 number={'valueformat':'%{y:,.2}'})
                  )
-
-
-    layout_five = dict(title='Total number of Covid-19 cases in Chile and daily increase')
 
     # append all charts to the figures list
     figures = []
@@ -221,6 +220,6 @@ def return_figures():
     figures.append(dict(data=graph_two, layout=layout_two))
     figures.append(dict(data=graph_three, layout=layout_three))
     figures.append(dict(data=graph_four, layout=layout_four))
-    figures.append(dict(data=graph_five, layout=layout_five))
+    figures.append(dict(data=graph_five))
 
     return figures
