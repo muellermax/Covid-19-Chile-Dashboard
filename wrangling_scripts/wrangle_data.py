@@ -201,20 +201,17 @@ def return_figures():
 
     # Fifth chart is a single value showing the total amount of cases in Chile and the increase.
 
-    graph_five = []
-
     df = single_country('Chile', csse_cases_all)
 
-    graph_five.append(
-        go.Figure(go.Indicator(
-                  mode='number+delta',
-                  value=df.iloc[-1, 1],
-                  delta={'position': "top",
-                           'reference': df.iloc[-2, 1]})
-                  )
-    )
 
-#,                          'increasing': {'color': '#8b0000'}
+    graph_five = go.Figure(go.Indicator(
+                 mode='number+delta',
+                 value=df.iloc[-1, 1],
+                 delta={'position': "top",
+                        'reference': df.iloc[-2, 1],
+                        'increasing': {'color': '#8b0000'}})
+                 )
+
 
     layout_five = dict(title='Total number of Covid-19 cases in Chile and daily increase')
 
