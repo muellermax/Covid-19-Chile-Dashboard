@@ -208,12 +208,16 @@ def return_figures():
     graph_five.append(
         go.Figure(go.Indicator(
                   mode = 'number+delta',
-                  value = df.iloc[-1, 1],
+                  value = 300,
                   delta = {'position': "top",
-                           'reference': df.iloc[-2, 1],
+                           'reference': 200,
                            'increasing': {'color': '#8b0000'}})
                   )
     )
+
+#df.iloc[-1, 1]
+    #df.iloc[-2, 1]
+
 
     layout_five = dict(title='Total number of Covid-19 cases in Chile and daily increase')
 
