@@ -208,7 +208,8 @@ def return_figures():
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}})
+                        'increasing': {'color': '#8b0000'}},
+                 number={'valueformat': '%{y:,.2}'})
                  )
 
     # Sixths chart is a single value showing the total amount of deaths in Chile and the increase.
@@ -220,7 +221,8 @@ def return_figures():
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}})
+                        'increasing': {'color': '#8b0000'}},
+                 number={'valueformat': '%{y:,.2}'})
                  )
 
 
