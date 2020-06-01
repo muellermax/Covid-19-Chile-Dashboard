@@ -222,7 +222,7 @@ def return_figures():
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
                         'increasing': {'color': '#8b0000'}},
-                 number={'valueformat': '%{y:,.2}'})
+                 number={'valueformat': '{,}'})
                  )
 
 
