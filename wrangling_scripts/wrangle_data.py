@@ -208,7 +208,8 @@ def return_figures():
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}},
+                        'increasing': {'color': '#8b0000'},
+                        'valueformat': '{,}'},
                  number={'valueformat': '{,}'})
                  )
 
@@ -221,7 +222,8 @@ def return_figures():
                  value=df.iloc[-1, 1],
                  delta={'position': "top",
                         'reference': df.iloc[-2, 1],
-                        'increasing': {'color': '#8b0000'}},
+                        'increasing': {'color': '#8b0000'},
+                        'valueformat': '{,}'},
                  number={'valueformat': '{,}'})
                  )
 
