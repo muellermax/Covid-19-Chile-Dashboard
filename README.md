@@ -23,6 +23,8 @@ This project uses the following python packages: plotly, pandas, flask, gunicorn
 * Include daily tests in Chile, following the information provided here: https://github.com/MinCiencia/Datos-COVID19/blob/master/output/producto7/PCR.csv and here: https://github.com/MinCiencia/Datos-COVID19/blob/master/output/producto17/PCREstablecimiento.csv
 * Include information about ventilators: https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto20
 * Plots indicating the confirmed cases/deaths per 100,000 inhabitants
+* Include data about mobility, as in here: https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto33
+* Compare information about mortality: https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto32
 
 
 ### Files
