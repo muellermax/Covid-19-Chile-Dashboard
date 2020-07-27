@@ -37,8 +37,8 @@ The folder wrangling_scripts contains the following files:
 
 
 ### Further information to Covid-19 in Chile
-* Government webseite: http://www.minciencia.gob.cl/covid19
-* Government webseite: https://www.gob.cl/coronavirus/cifrasoficiales/
+* Government website: http://www.minciencia.gob.cl/covid19
+* Government website: https://www.gob.cl/coronavirus/cifrasoficiales/
 
 
 ### Acknowledgments
