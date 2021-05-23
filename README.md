@@ -8,7 +8,7 @@ The plan is to make a dashboard that includes daily updated information about Co
 * Daily deaths in Chile including rolling average
 * Cases in comparison with other Latin American Countries
 * Deaths in comparison with other Latin American Countries
-* Map of Santiago de Chile with number of infections in the differenct city districs 
+* Map of Santiago de Chile with number of infections in the differenct city districs  
 
 ### Installation
 This project uses the following python packages: plotly, pandas, flask, gunicorn. For the deployment of the app I tried Heroku. 
