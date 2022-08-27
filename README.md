@@ -1,6 +1,6 @@
 # Analysis of Covid-19 in Chile
 
-The dashboard of Covid-19 in Chile can be found here: https://covid-chile-dashboard.herokuapp.com/
+The dashboard of Covid-19 in Chile can be found here: https://covid-chile-dashboard.onrender.com
 
 ### About this project
 The plan is to make a dashboard that includes daily updated information about Covid-19 in Chile. The dashboard should include the following plots: 
@@ -11,7 +11,7 @@ The plan is to make a dashboard that includes daily updated information about Co
 * Map of Santiago de Chile with number of infections in the differenct city districs  
 
 ### Installation
-This project uses the following python packages: plotly, pandas, flask, gunicorn. For the deployment of the app I tried Heroku. 
+This project uses the following python packages: plotly, pandas, flask, gunicorn. For the deployment of the app I use Render. 
 
 
 ### Data sources
