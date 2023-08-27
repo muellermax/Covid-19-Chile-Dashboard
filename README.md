@@ -1,6 +1,6 @@
 # Analysis of Covid-19 in Chile
 
-The dashboard of Covid-19 in Chile can be found here: https://covid-chile-dashboard.onrender.com.
+The dashboard of Covid-19 in Chile was online on Heroku until end of 2022. 
 
 ### About this project
 The plan is to make a dashboard that includes daily updated information about Covid-19 in Chile. The dashboard should include the following plots: 
